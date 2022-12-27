@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./style/img/logo.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="stylesheet" href="./animate.css" />
+    <link rel="stylesheet" href="./sass/login.css" />
+    <title>Sign in to Lowery Coffee</title>
+  </head>
+  <body>
+    <div class="login">
+      <div class="login__container">
+        <img src="./sass/img/coffee.png" alt="" class="ps__seed-coffee" />
+        <img src="./sass/img/coffee1.png" alt="" class="ps__seed-coffee1" />
+        <h3 class="login__container-title">LOGIN</h3>
+
+        <div class="login__container-form">
+          <label for="user" class="login__container-form-lable">Username</label>
+          <div class="login__form-input-frames">
+            <ion-icon class="icon-input" name="person-outline"></ion-icon>
+            <input
+              type="text"
+              class="login__container-form-input"
+              id="user"
+              placeholder="Type your username"
+              name="username"
+            />
+          </div>
+          <label for="pass" class="login__container-form-lable">password</label>
+          <div class="login__form-input-frames">
+            <ion-icon class="icon-input" name="lock-closed-outline"></ion-icon>
+            <input
+              type="password"
+              class="login__container-form-input"
+              id="pass"
+              placeholder="Type your password"
+              name="password"
+              required
+            />
+          </div>
+          <a href="" class="login__container-link-forgot">Forgot password?</a>
+          <button class="login-btn">LOGIN</button>
+          <p class="login__other-link">Or Sign Up Using</p>
+          <div class="login__container-social">
+            <a href="" class="login__container-social-link">
+              <img
+                src="./sass/img/facebook.png"
+                alt=""
+                class="icon-app-login"
+              />
+            </a>
+
+            <a href="" class="login__container-social-link">
+              <img src="./sass/img/twitter.png" alt="" class="icon-app-login" />
+            </a>
+
+            <a href="" class="login__container-social-link">
+              <img src="./sass/img/google.png" alt="" class="icon-app-login" />
+            </a>
+          </div>
+          <p class="login__create-account js-account">Create new Account</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ! Modal -->
+    <div class="modal js-modal">
+      <div class="modal__container">
+        <div class="login__container-close">
+          <ion-icon
+            class="close-icon-modal js-close"
+            name="close-outline"
+          ></ion-icon>
+        </div>
+        <div class="modal__container-form">
+          <div class="modal__container-left">
+            <img
+              src="./sass/img/img-head-modal.jpeg"
+              alt=""
+              class="modal__container-head-img"
+            />
+            <div class="modal__container-left-ps">
+              <h3 class="modal__container-left-heading">Welcome</h3>
+            </div>
+          </div>
+          <div class="modal__container-right">
+            <h5 class="modal__container-right-heading js-account">
+              Create your account
+            </h5>
+            <label for="name" class="modal__container-right-label mt-30"
+              >First Name</label
+            >
+            <input
+              type="text"
+              class="modal__container-right-input"
+              id="name"
+              placeholder="Name"
+            />
+            <label for="email" class="modal__container-right-label1"
+              >Your email address</label
+            >
+            <input
+              id="email"
+              placeholder="Email"
+              type="email"
+              class="modal__container-right-input1"
+            />
+            <label for="pass2" class="modal__container-right-label2"
+              >Password</label
+            >
+            <input
+              id="pass2"
+              type="password"
+              class="modal__container-right-input2"
+              placeholder="Password"
+            />
+            <label for="pass1" class="modal__container-right-label3"
+              >Confirm password</label
+            >
+            <input
+              placeholder="Enter the password"
+              id="pass1"
+              type="password"
+              class="modal__container-right-input3"
+            />
+            <div class="modal__container-checkbox">
+              <input
+                type="checkbox"
+                class="modal__container-check"
+                checked="checked"
+                value="bike"
+              />
+              <span class="modal__container-checkbox-title">Remember me</span>
+            </div>
+            <button class="modal__container-btn">Create new</button>
+            <h4 class="modal__container-has-been">
+              Already an account ?
+              <span class="modal__container-sign">Sign in</span>
+            </h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+  <script src="./wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+</html>

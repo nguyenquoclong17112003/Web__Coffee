@@ -1,0 +1,40 @@
+@mixin btn-all($back-ground: background-color, $color: color) {
+  min-width: 170px;
+  height: 46px;
+  border-radius: 33px;
+  outline: none;
+  border: none;
+  background-color: $back-ground;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $color;
+}
+
+@mixin evaluate-all() {
+  min-width: 118px;
+  position: absolute;
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  height: 52px;
+  border-radius: 28px;
+  align-items: center;
+  border: 5px solid rgba(56, 40, 48, 0.12);
+  justify-content: center;
+}
+
+@mixin underline {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0%;
+  top: 128%;
+  display: inline-block;
+  width: 35%;
+  height: 4px;
+  border-radius: 5px;
+  background-color: #ff902b;
+}
